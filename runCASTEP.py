@@ -36,11 +36,12 @@ def getFiles(suffix,dir=os.getcwd()):
                 rename.append(os.path.join(root,fname))
     return(rename)
 
-# 
+# Notes: You need to prepare .param file corresponding to .cell file in the folder where you need to calculate.
 suffix = '.cell'
+# You can set fpath to any folder path you want to calculate, and the path where runCASTEP.py is located as the default path. 
+fpath  = os.getcwd()
 
-fname  = getFiles(suffix)
-
+fname  = getFiles(suffix,fpath)
 # Number of CPU cores, you can customize **ncore** according to your CPU cores.
 ncore  = 4
 processName = 'castep.mpi'
@@ -68,4 +69,3 @@ if len(fname) > 0:
     print('Task completed!')
 else:
     print("No files in " + suffix + " format exist in the specified folder and its subfolders")
-
