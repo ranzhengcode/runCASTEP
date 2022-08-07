@@ -2,7 +2,7 @@
 Fully automated execution of all CASTEP calculation tasks in the specified folder and its subfolders.
 
 ## How to run?
-1. Define your own path need to be calculated;
+1. Define your own path need to be calculated in line 42;
 2. type `python runCASTEP.py` to run.
 
 ## Requirements
