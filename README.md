@@ -6,5 +6,5 @@ Fully automated execution of all CASTEP calculation tasks in the specified folde
 2. type `python runCASTEP.py` to run.
 
 ## Requirements
-1. you need to install CASTEP on your computer;
+1. you need to install CASTEP (**Not the CASTEP of Materials Studio**) on your computer. [You can apply for CASTEP **HERE**](http://www.castep.org/CASTEP/GettingCASTEP);
 2. python packages: psutil, time, os.
