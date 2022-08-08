@@ -8,10 +8,6 @@
 Al                  0              0                   0
 %ENDBLOCK POSITIONS_ABS
 
-%block species_pot
-Al Al_00.usp
-%endblock species_pot
-
 kpoint_mp_grid 12 12 12
 
 symmetry_generate
